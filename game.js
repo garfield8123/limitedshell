@@ -3,10 +3,10 @@ script.src = "http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js";
 script.type = "text/javascript";
 document.getElementsByTagName("head")[0].appendChild(script);
 var people = [];
-    availableCommands = $.getJSON('/information/limitedshell.json', function(data) {
+    availableCommands = $.getJSON('./limitedshell.json', function(data) {
         availableCommands = data.availableCommands;
     });
-    Commands = $.getJSON('/information/limitedshell.json', function(seconddata) {
+    Commands = $.getJSON('./limitedshell.json', function(seconddata) {
         Commands = seconddata.commands;
     });
     count = 0;
