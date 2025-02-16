@@ -3,19 +3,19 @@ script.src = "http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js";
 script.type = "text/javascript";
 document.getElementsByTagName("head")[0].appendChild(script);
 var people = [];
-    availableCommands = $.getJSON('./limitedshell.json', function(data) {
-        availableCommands = data.availableCommands;
-    });
-    Commands = $.getJSON('./limitedshell.json', function(seconddata) {
-        Commands = seconddata.commands;
-    });
-    count = 0;
-    sshcount = 0;
-    sshtries = 0;
-    inssh = false;
-    gamerun = true;
-    site = ""
-    sites = ["credentials.garfield.com", "aboutme.garfield.com", "projects.garfield.com"];
+availableCommands = $.getJSON('./limitedshell.json', function(data) {
+    availableCommands = data.availableCommands;
+});
+Commands = $.getJSON('./limitedshell.json', function(seconddata) {
+    Commands = seconddata.commands;
+});
+count = 0;
+sshcount = 0;
+sshtries = 0;
+inssh = false;
+gamerun = true;
+site = ""
+sites = ["credentials.garfield.com", "aboutme.garfield.com", "projects.garfield.com"];
 
     function getPasswords(){
         credentials = {};
